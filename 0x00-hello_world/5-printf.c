@@ -1,9 +1,8 @@
 #include <stdio.h>
 /**
+ * main - to be called
  *
- * * main - to be called
- *
- * * return:0 for the int
+ * return:0 for the int
  *
  **/
 int main(void)
