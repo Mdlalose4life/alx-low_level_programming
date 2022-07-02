@@ -4,7 +4,8 @@
 
 /**
  * main - main block
- * Return: 0
+ *
+ * Return: Always 0 (success)
  */
 
 int main(void)
@@ -17,7 +18,7 @@ if (n > 5)
 {
 	printf("Last digit of %d is 8 and is grether than 5\n", n);
 {
-if (n > 6 && n != 0)
+if (n < 6 && n != 0)
 {
 	printf("Last digit of %d is less than 6 and not 0\n", n);
 }
