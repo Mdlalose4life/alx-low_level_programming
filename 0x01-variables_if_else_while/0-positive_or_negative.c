@@ -3,8 +3,9 @@
 #include <stdio.h>
 
  /**
-  * main - assign a random number to the variable n each time it is executed.
-  * Return: 0
+  * main - Prints random numbers and decide if
+  * 	they are positive, negative, or zero.
+  * Return: Always 0.
   */
 
 int main(void)
