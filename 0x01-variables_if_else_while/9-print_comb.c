@@ -11,6 +11,8 @@ int asc;
 	for (asc = 0; asc <= 9 ; asc++)
 	{
 		putchar((asc % 10) + '0');
+		if (asc == 9)
+			break;
 		putchar(',');
 		putchar(' ');
 	}
