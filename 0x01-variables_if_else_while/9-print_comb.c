@@ -16,5 +16,6 @@ int asc;
 		putchar(',');
 		putchar(' ');
 	}
+	putchar('\n');
 	return (0);
 }
