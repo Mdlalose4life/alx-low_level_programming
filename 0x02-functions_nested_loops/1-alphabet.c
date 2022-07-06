@@ -12,6 +12,6 @@ char alph;
 	{
 		_putchar(alph);
 	}
-	_putchar('\n')
+	_putchar('\n');
 	retun(0);
 }
