@@ -13,5 +13,5 @@ char alph;
 		_putchar(alph);
 	}
 	_putchar('\n');
-	retun(0);
+	return (0);
 }
