@@ -7,10 +7,10 @@
 
 void print_alphabet(void);
 {
-char alh;
+char alph
 	for (alph = 'a' ; alph <= 'z' ; alph++)
 	{
-		putcgar(alph);
+		putchar(alph);
 	}
 	putchar('\n')
 	retun(0);
