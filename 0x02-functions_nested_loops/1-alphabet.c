@@ -5,13 +5,13 @@
  * Return: 0.
  */
 
-void print_alphabet(void);
+void print_alphabet(void)
 {
 char alph;
 	for (alph = 'a' ; alph <= 'z' ; alph++)
 	{
-		putchar(alph);
+		_putchar(alph);
 	}
-	putchar('\n')
+	_putchar('\n')
 	retun(0);
 }
