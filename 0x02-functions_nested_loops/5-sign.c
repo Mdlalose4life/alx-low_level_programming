@@ -2,7 +2,7 @@
 /**
  * print_sign - prints sign of a number.
  * @n: The number for which sign will be printed.
- * Retun: 1, 0 -1
+ * Retun: 1, 0 -1.
  */
 
 int print_sign(int n)
