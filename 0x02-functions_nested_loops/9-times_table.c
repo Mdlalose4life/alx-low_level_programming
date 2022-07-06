@@ -2,10 +2,9 @@
 /**
  * time_table - prints the table of 9, that start feom 0.
  *
- *
  */
 
-void times_table(void);
+void times_table(void)
 {
 int a;
 int b;
@@ -27,7 +26,7 @@ int c;
 		_putchar((c / 10) + '0')
 		_putchar((c % 10) + '0');
 		}
-	_putchar('/n');
+	_putchar('\n');
 	}
 
 
