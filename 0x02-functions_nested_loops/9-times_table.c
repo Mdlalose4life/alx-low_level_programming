@@ -1,7 +1,6 @@
 #include "main.h"
 /**
- * time_table - prints the table of 9, that start feom 0.
- *
+ * times_table - prints the table of 9, that start from 0.
  */
 
 void times_table(void)
