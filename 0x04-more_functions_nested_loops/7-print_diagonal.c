@@ -4,20 +4,19 @@
  */
 
 void print_diagonal(int n)
-
 {
 	int a;
 	int b;
 
 	if (n > 0)
 	{
-		for (a = 0; a < b; a++)
+		for (a = 0; a < n; a++)
 		{
 			for (b = 0; b < a; b++)
 				_putchar(' ');
 			_putchar('\\');
 
-			if (len == n - 1)
+			if (a == n - 1)
 				continue;
 			putchar('\n');
 		}
