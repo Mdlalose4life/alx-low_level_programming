@@ -1,6 +1,6 @@
 /**
  * print_diagonal - draw diagonal line on screen using a backslash character.
- * @n: Numer of backlash to be printed.
+ * @n: Number of backlash to be printed.
  */
 
 void print_diagonal(int n)
