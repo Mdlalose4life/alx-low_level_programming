@@ -10,10 +10,7 @@ int a;
 	if (n > 0)
 {
 	for (a = 0; a < n; a++)
-	{
 		_putchar('_');
-	}
-	_putchar('\n');
 }
-
+_putchar('\n');
 }
