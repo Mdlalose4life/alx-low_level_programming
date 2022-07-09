@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_numbers - print random intergers
+ * print_number - print random intergers
  * @n: random interges to be printed.
  */
 
