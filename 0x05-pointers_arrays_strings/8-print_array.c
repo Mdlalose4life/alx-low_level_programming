@@ -16,7 +16,7 @@ int i;
 	if (i == n - 1)
 		continue;
 
-	printf(",");
+	printf(", ");
 
 	}
 	printf("\n");
