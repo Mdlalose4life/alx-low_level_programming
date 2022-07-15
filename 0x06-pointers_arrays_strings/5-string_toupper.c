@@ -1,19 +1,19 @@
 #include "main.h"
 #include <stdio.h>
 /**
- * Changes all lowercase latter of a string to uppercase.
- * @str: The srting to be converted.
+ * string_toupper -> Changes all lowercase latter of a string to uppercase.
+ * @ptr: The string to be converted.
  * Return: Conveted str.
  */
-char *string_toupper(char *str)
+char *string_toupper(char *ptr)
 {
 	int i = 0;
 
-	while (str[i])
+	while (ptr[i])
 	{
-		if (str[i] >= 'a' && str[i] <= 'z')
-			str[i] -= 32;
+		if (ptr[i] >= 'a' && ptr[i] <= 'z')
+			ptr[i] -= 32;
 		i++;
 	}
-	return (str);
+	return (ptr);
 }
