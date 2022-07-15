@@ -2,8 +2,10 @@
 #include <stdio.h>
 /**
  * Changes all lowercase latter of a string to uppercase.
- *
-char *string_toupper(char )
+ * @str: The srting to be converted.
+ * Return: Conveted str.
+ */
+char *string_toupper(char *str)
 {
 	int i = 0;
 
