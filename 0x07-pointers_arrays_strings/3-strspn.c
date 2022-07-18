@@ -20,7 +20,7 @@ while (*s)
 		b++;
 		break;
 		}
-		if (*s == accept[i + 1] == '\0')
+		else if (*s == accept[i + 1] == '\0')
 		return (b);
 	}
 	s++;
