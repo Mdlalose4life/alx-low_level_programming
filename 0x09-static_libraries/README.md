@@ -1,1 +1,1 @@
-readme for the Standard libraly
+readme for for static libralies in C
