@@ -10,13 +10,13 @@ int _atoi(char *s)
 {
 int i = 1;
 unsigned int numb = 0;
-	do{
+	do {
 	if (*s == '-')
 		i *= -1;
-	else if (*s >= '0' && *s <='9')
+	else if (*s >= '0' && *s <= '9')
 		i = (i * 10) + (*s - '0');
 	else if (numb > 0)
 		break;
-	}while(*s++);
-	return (numb*i);
+	} while (*s++);
+	return (numb * i);
 }
