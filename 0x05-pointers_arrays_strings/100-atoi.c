@@ -13,7 +13,7 @@ unsigned int numb = 0;
 	do{
 	if (*s == '-')
 		i *= -1;
-	else if (*s >= 0 && *s <='9')
+	else if (*s >= '0' && *s <='9')
 		i = (i * 10) + (*s - '0');
 	else if (numb > 0)
 		break;
