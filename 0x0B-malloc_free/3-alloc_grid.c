@@ -31,7 +31,7 @@ return (NULL);
 }
 for (l = 0; l < height; l++)
 {
-for (b = 0; b < wigth; b++)
+for (b = 0; b < width; b++)
 a[l][b] = 0;
 }
 return (a);
