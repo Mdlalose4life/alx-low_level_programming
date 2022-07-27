@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib>
 /**
  * free_grid -> function that frees a 2 dimensional of numners.
  * @grid: The array that must be freed.
