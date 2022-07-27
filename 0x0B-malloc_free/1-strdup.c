@@ -3,8 +3,12 @@
 #include <stdlib.h>
 
 /**
- * _strdup -> Retuns a pointer tu a newly allocated space in memory.
- * @str: string whose copy is co
+ * _strdup -> Retuns a pointer to a newly allocated space in memory.
+ * that containing a duplicate of a given string.
+ * @str: string to be coppied.
+ * Return: if str = null return null.
+ * if memory insuficiant: retutn null.
+ * otherwise a pointer to the copy of a string.
  */
 char *_strdup(char *str)
 {
@@ -14,7 +18,7 @@ char *_strdup(char *str)
 
 	if (str == NULL)
 	return (NULL);
-	for (i = 0; str[i];i++);
+	for (i = 0; str[i]; i++)
 		new++;
 	dest = malloc(sizeof(char) * (new + 1));
 	if (dest == NULL)
