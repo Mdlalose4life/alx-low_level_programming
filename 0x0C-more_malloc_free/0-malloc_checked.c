@@ -14,6 +14,6 @@ int *i;
 
 i = malloc(b);
 	if (i == NULL)
-		return (NULL);
+		exit(98);
 return (i);
 }
