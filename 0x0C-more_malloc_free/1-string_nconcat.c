@@ -20,6 +20,8 @@ char *conc;
 		return ("");
 	if (s2 == NULL)
 		return ("");
+	for (i = 0; s1[i]; i++)
+		l++;
 	conc = malloc(sizeof(char) * (n + 1));
 	if (conc == NULL)
 		return (NULL);
@@ -28,7 +30,11 @@ char *conc;
 		conc[l++] = s1[i];
 		i++;
 	}
-	for (i = 0; s1[i] && i < n; i++)
+	while (s1[i] && i < n)
+	{
 		conc[l++] = s2[i];
+		i++;
+	}
+	conc[l] = '\0';
 	return (conc);
 }
