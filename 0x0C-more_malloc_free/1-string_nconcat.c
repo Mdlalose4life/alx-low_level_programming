@@ -30,5 +30,5 @@ char *conc;
 	}
 	for (i = 0; s1[i] && i < n; i++)
 		conc[l++] = s2[i];
-	return (s2);
+	return (conc);
 }
