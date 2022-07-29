@@ -30,7 +30,7 @@ char *conc;
 		conc[l++] = s1[i];
 		i++;
 	}
-	while (s1[i] && i < n)
+	while (s2[i] && i < n)
 	{
 		conc[l++] = s2[i];
 		i++;
