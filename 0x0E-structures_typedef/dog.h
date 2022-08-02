@@ -1,10 +1,10 @@
 #ifndef MAIN_H
 #define MAIN_H
 
-struct{
-char* name;
+{struct
+char *name;
 float age;
-char* owner;
+char *owner;
 };
 
 #endif
