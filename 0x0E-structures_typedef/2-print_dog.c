@@ -1,7 +1,6 @@
  #include "dog.h"
  #include <stdio.h>
  #include <stdlib.h>
- 
 /**
  * print_dog -> Prints the string dog.
  * @d: the structure to be printed
