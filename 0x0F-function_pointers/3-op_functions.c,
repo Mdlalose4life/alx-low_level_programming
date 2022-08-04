@@ -1,0 +1,55 @@
+#inclde "calc.h"
+/**
+ * op_add - Function that adds two numbers.
+ * @a: First number to be added.
+ * @b: Second numer to be added.
+ * Return: returns the sum of the two numbers.
+ */
+int op_add(int a, int b)
+{
+return(a + b);
+}
+
+/**
+ * op_sub - Function that subtracts two numbers.
+ * @a: A number we are subtracting from.
+ * @b: A number we are subtracting.
+ * Returns: The defference between the two numbers
+ */
+int op_sub(int a, int b)
+{
+return (a - b);
+}
+
+/**
+ * op_mul - Function that muliplies two numbers.
+ * @a: A number we are multiplying.
+ * @b: A number we are multiplying by.
+ * Returns: The product of the two numbers
+ */
+int op_mul(int a, int b)
+{
+return (a * b);
+}
+
+ /**
+ * op_div - Function that devides two numbers.
+ * @a: A number we are deving.
+ * @b: A number we are deviding by.
+ * Retuns: The result of the multiplication.
+ */
+int op_div(int a, int b)
+{
+return (a/b);
+}
+
+/**
+ * op_mod - Function that modulus two numbers.
+ * @a: The number we are deviding.
+ * @b: The number we are deviding with.
+ * Returns: The reminder of the devision.
+ */
+int op_mod(int a, int b)
+{
+return (a%b);
+}
