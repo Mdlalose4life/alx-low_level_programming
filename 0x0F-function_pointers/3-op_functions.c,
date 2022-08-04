@@ -1,4 +1,6 @@
-#inclde "calc.h"
+#include <stdio.h>
+#include <stdlib.h>
+#include "3-calc.h"
 /**
  * op_add - Function that adds two numbers.
  * @a: First number to be added.
@@ -40,7 +42,7 @@ return (a * b);
  */
 int op_div(int a, int b)
 {
-return (a/b);
+return (a / b);
 }
 
 /**
@@ -51,5 +53,5 @@ return (a/b);
  */
 int op_mod(int a, int b)
 {
-return (a%b);
+return (a % b);
 }
