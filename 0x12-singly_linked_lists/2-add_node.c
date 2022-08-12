@@ -8,33 +8,25 @@
  * Return: If function fails return NULL.
  * otherwise return a pointer to current1.
  */
-list_t *add_node_end(list_t **head, const char *str)
+list_t *add_node(list_t **head, const char *str)
 {
 char *dup;
 int len;
-list_t *current1, *current;
-current1 = malloc(sizeof(list_t));
-if (current1 == NULL)
+list_t *current;
+current = malloc(sizeof(list_t));
+if (current == NULL)
 	return (NULL);
 dup =  strdup(str);
-if (str == NULL)
+if (dup == NULL)
 {
-	free(current1);
+	free(current);
 	return (NULL);
 }
 for (len = 0; str[len];)
 	len++;
-current1->str = dup;
-current1->len = len;
-current1->next = NULL;
-if (*head == NULL)
-	*head = current1;
-else
-{
-	current = *head;
-	while (current->next != NULL)
-		current = current->next;
-	current->next = current1;
-}
+current->str = dup;
+current->len = len;
+current->next = *head;
+*head = current;
 return (*head);
 }
