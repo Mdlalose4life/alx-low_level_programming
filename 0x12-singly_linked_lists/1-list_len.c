@@ -5,7 +5,7 @@
  * @h: The list.
  * Return: Number of elements on the list.
  */
-list_t *add_node(list_t **head, const char *str);
+size_t list_len(const list_t *h)
 {
 size_t i = 0;
 while(h)
