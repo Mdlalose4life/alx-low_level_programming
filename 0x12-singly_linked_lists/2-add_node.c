@@ -16,7 +16,7 @@ list_t *current1, *current;
 current1 = malloc(sizeof(list_t));
 if (current1 == NULL)
 	return (NULL);
-src = strsrc(str);
+src =  strscr(str);
 if (str == NULL)
 {
 	free(current1);
@@ -32,8 +32,8 @@ else
 {
 	current = *head;
 	while (current->next != NULL)
-		last = last->next;
-	last->next = current1;
+		current = current->next;
+	current->next = current1;
 }
 return (*head);
 }
