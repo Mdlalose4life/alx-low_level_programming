@@ -1,23 +1,17 @@
 #include "lists.h"
-#include <stdio.h>
 /**
- * size_t - A function that prints all elements in
- * list_t list.
- * @h: The pointer to the head of the list.
- * return: if str is NULL print [0] (nil)
- * otherwise: return the number of nodes.
+ * list_t - Function that retuns number of
+ * elemente in a single linked list.
+ * @h: The list.
+ * Return: Number of elements on the list.
  */
-size_t list_len(const list_t *h)
+list_t *add_node(list_t **head, const char *str);
 {
-size_t node = 0;
+size_t i = 0;
 while(h)
 {
-if ((*h).str == NULL)
-	printf("[0](nil)");
-else
-	printf("[%d] %s\n", (*h).len, (*h).str);
-	node++;
-	h = (*h).next;
+	i++;
+	h=h->next;
 }
-return (node);
+return(i);
 }
