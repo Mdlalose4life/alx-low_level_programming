@@ -22,10 +22,11 @@ if (str == NULL)
 	free(current1);
 	return (NULL);
 }
-for (len = 0; str[len]; len++)
-	current1->str = dup;
-	current1->len = len;
-	current1->next = NULL;
+for (len = 0; str[len];)
+	len++;
+current1->str = dup;
+current1->len = len;
+current1->next = NULL;
 if (*head == NULL)
 	*head = current1;
 else
