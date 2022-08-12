@@ -2,7 +2,7 @@
 #include <string.h>
 #include <stdlib.h>
 /**
- * add_node_end -> adds a new node at the end of a list_t list
+ * add_node -> adds a new node at the end of a list_t list
  * @head: pointer to the head of the list_t.
  * @str: String that needs to be duplicated.
  * Return: If function fails return NULL.
@@ -28,5 +28,5 @@ current->str = dup;
 current->len = len;
 current->next = *head;
 *head = current;
-return (*head);
+return (current);
 }
