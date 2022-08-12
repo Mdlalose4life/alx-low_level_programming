@@ -10,13 +10,13 @@
  */
 list_t *add_node_end(list_t **head, const char *str)
 {
-char src;
+char *src;
 int len;
 list_t *current1, *current;
 current1 = malloc(sizeof(list_t));
 if (current1 == NULL)
 	return (NULL);
-src = strstr(str);
+src = strsrc(str);
 if (str == NULL)
 {
 	free(current1);
