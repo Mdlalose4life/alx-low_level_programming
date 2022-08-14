@@ -52,9 +52,8 @@ dog_t *dog;
 if (name == NULL || age < 0 || owner == NULL)
 	return (NULL);
 dog = malloc(sizeof(dog_t));
-if (dog->name == NULL)
+if (dog == NULL)
 {
-	free(dog);
 	return (NULL);
 }
 dog->name = malloc(sizeof(char) * (_strlen(name) + 1));
