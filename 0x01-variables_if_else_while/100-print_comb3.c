@@ -15,7 +15,7 @@ for (d1 = 0; d1 < 9; d1++)
 	putchar((d2 % 10) + '0');
 	if (d1 == 8 && d2 == 9)
 	continue;
-	putchar(';');
+	putchar(',');
 	putchar(' ');
 	}
 }
