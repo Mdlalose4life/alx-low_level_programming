@@ -19,14 +19,14 @@ temp->n = n;
 if (idx == 0)
 {
 	temp->next = ptr;
-	*head = ptr;
+	*head = temp;
 	return (temp);
 }
 for (count = 0; count < (idx - 1); count++)
 {
 	if (ptr == NULL || ptr->next == NULL)
 		return (NULL);
-	ptr=ptr->next;
+	ptr = ptr->next;
 }
 temp->next = ptr->next;
 ptr->next=temp;
