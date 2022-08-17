@@ -1,5 +1,4 @@
 #include "lists.h"
-#include <stdlib.h>
 /**
  * reverse_listint -> reverses a listint_t linked list.
  * @head: The pointer to the head of the address of the head.
