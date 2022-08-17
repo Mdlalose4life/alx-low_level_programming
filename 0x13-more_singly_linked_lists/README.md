@@ -3,3 +3,5 @@
 2. A function that adds a new node at the beginning of a listint_t list.
 3. A function that adds a new node at the end of a listint_t list.
 4. Free space in the head of the list.
+5. frees a listint_t list.
+6. 
