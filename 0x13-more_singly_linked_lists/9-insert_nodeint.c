@@ -29,6 +29,6 @@ for (count = 0; count < (idx - 1); count++)
 	ptr = ptr->next;
 }
 temp->next = ptr->next;
-ptr->next=temp;
+ptr->next = temp;
 return (temp);
 }
