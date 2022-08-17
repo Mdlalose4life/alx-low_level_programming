@@ -21,10 +21,8 @@ else
 {
 	ptr = *head;
 	while (ptr->next != NULL)
-	{
 		ptr = ptr->next;
 	ptr->next = temp;
-	}
 }
 return (*head);
 }
