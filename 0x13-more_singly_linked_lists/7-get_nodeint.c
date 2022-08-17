@@ -15,7 +15,7 @@ for (count = 0; count < index; count++)
 {
 	if (head == NULL)
 		return (NULL);
-	head=head->next;
+	head = head->next;
 }
 return (head);
 }
