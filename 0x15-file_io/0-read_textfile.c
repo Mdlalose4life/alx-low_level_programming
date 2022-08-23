@@ -28,7 +28,9 @@ z = write(STDOUT_FILENO, buffers, y);
 if (x == -1 || y == -1 || z == -1 || z != y)
 {
 	free(buffers);
-	close(0);
+	return (0);
 }
+free(buffers);
+close(x);
 return (z);
 }
