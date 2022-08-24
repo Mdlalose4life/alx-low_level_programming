@@ -5,7 +5,7 @@
 char *my_buffer(char *pf);
 void end_file(int fc);
 /**
- * my_buffer -> Allocates 1030 byes for buffer.
+ * my_buffer -> Allocates 1024 byes for buffer.
  * @fp: The file on which the buffer is storing
  * it's contents.
  * Return: A pointer to the allocated buffer.
@@ -13,7 +13,7 @@ void end_file(int fc);
 char *my_buffer(char *fp)
 {
 char *buffer;
-buffer = malloc(sizeof(char) * 1030);
+buffer = malloc(sizeof(char) * 1024);
 if (buffer == NULL)
 {
 	dprintf(STDERR_FILENO,
@@ -53,7 +53,7 @@ exit(97);
 }
 buffer = my_buffer(argv[2]);
 src = open(argv[1], O_RDONLY);
-x = read(src, buffer, 1030);
+x = read(src, buffer, 1024);
 dest = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 do {
 if (src == -1 || x == -1)
@@ -69,10 +69,11 @@ dprintf(STDERR_FILENO, "Error : Can't write to %s\n", argv[2]);
 free(buffer);
 exit(99);
 }
-x = read(src, buffer, 1030);
+x = read(src, buffer, 1024);
 dest = open(argv[2], O_WRONLY | O_APPEND);
 } while (x > 0);
 free(buffer);
 end_file(src);
 end_file(dest);
+return (0);
 }
