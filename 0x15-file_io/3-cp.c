@@ -58,7 +58,7 @@ dest = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 do {
 	if (src == -1 || x == -1)
 	{
-	dprintf(STDERR_FILENO, 
+	dprintf(STDERR_FILENO,
 	"Error: Can't read from %s\n", argv[1]);
 	free(buffer);
 	exit(98);
@@ -66,7 +66,7 @@ do {
 	y = write(dest, buffer, x);
 	if (dest == -1 || y == -1)
 	{
-	dprintf(STDERR_FILENO, 
+	dprintf(STDERR_FILENO,
 	"Error : Can't write to %s\n", argv[2]);
 	free(buffer);
 	exit(99);
