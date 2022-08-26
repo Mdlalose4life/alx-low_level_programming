@@ -48,29 +48,31 @@ int src, dest, x, y;
 char *buffer;
 if (argc != 3)
 {
-dprintf(STDERR_FILENO, "Usage: coppy file_from file_to\n");
-exit(97);
+	dprintf(STDERR_FILENO, "Usage: cp file_from file_to\n");
+	exit(97);
 }
 buffer = my_buffer(argv[2]);
 src = open(argv[1], O_RDONLY);
 x = read(src, buffer, 1024);
 dest = open(argv[2], O_CREAT | O_WRONLY | O_TRUNC, 0664);
 do {
-if (src == -1 || x == -1)
-{
-dprintf(STDERR_FILENO, "Error: Can't read from %s\n", argv[1]);
-free(buffer);
-exit(98);
-}
-y = write(dest, buffer, x);
-if (dest == -1 || y == -1)
-{
-dprintf(STDERR_FILENO, "Error : Can't write to %s\n", argv[2]);
-free(buffer);
-exit(99);
-}
-x = read(src, buffer, 1024);
-dest = open(argv[2], O_WRONLY | O_APPEND);
+	if (src == -1 || x == -1)
+	{
+	dprintf(STDERR_FILENO, 
+	"Error: Can't read from %s\n", argv[1]);
+	free(buffer);
+	exit(98);
+	}
+	y = write(dest, buffer, x);
+	if (dest == -1 || y == -1)
+	{
+	dprintf(STDERR_FILENO, 
+	"Error : Can't write to %s\n", argv[2]);
+	free(buffer);
+	exit(99);
+	}
+	x = read(src, buffer, 1024);
+	dest = open(argv[2], O_WRONLY | O_APPEND);
 } while (x > 0);
 free(buffer);
 end_file(src);
