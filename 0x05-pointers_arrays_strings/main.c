@@ -1,18 +1,18 @@
-#include <unistd.h>
-
-
-
+#include "main.h"
+#include <string.h>
 /**
- * _putchar - writes the character c to stdout
- * @c: The character to print
- * Return: On success 1.
- * On error, -1 is returned, and errno is set appropriately.
+ * puts2 - prints every character of a string.
+ * @str: string to be printed
  */
 
-int _putchar(char c)
+void puts2(char *str)
 
 {
+	int l;
+	int i;
 
-	return (write(1, &c, 1));
-
+	l = strlen(str);
+	for (i = 0; i < l; i += 2)
+	_putchar(str[i]);
+	_putchar('\n');
 }

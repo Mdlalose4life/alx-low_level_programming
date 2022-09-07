@@ -17,4 +17,4 @@ int i = 0;
 		i++;
 	}
 	return (dest = '\0');
-}
+} 
