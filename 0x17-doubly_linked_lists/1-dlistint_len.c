@@ -2,7 +2,7 @@
 #include <stdio.h>
 /**
  * dlistint_len - counts the number of nodes in dlistint_t.
- * @h: The pointer to the head of a structure.
+ * @h: The pointer to the head of a linked list.
  * Return: The number of nodes on the struct dlistint_t.
  */
 size_t dlistint_len(const dlistint_t *h)
