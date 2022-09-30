@@ -1,6 +1,4 @@
 #include "lists.h"
-#include <stdio.h>
-#include <stdlib.h>
 /**
  * free_dlistint - frees the memory of struct dlistint_t.
  * @head: The pointer to the head of a struct.
@@ -13,6 +11,6 @@ while (head != NULL)
 {
 	temp = head->next;
 	free(head);
-	temp = head;
+	head = temp;
 }
 }
