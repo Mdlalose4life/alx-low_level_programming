@@ -1,5 +1,4 @@
 #include "hash_tables.h"
-
 /**
  * make_hash_node - creating a new hash node
  * @key: key for the node
