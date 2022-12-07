@@ -1,0 +1,11 @@
+# -*- Task_2 -*-
+
+NAME = holberton
+all: $(NAME)
+
+CC = gcc
+SRC = main.c holberton.c
+OBJ = $(SRC:.c=.o)
+
+$(NAME): $(OBJ) m.h
+	$(CC) $(OBJ) -o $(NAME)
