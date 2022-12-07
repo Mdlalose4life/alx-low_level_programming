@@ -1,8 +1,6 @@
-# -*- Task_1 -*-
+# -*- MakeFile -*-
 
 all: holberton
-CC = gcc
-SRC = main.c holberton.c
 
-holberton: $(SRC) m.h
-	$(CC) $(SRC) -o holberton
+holberton: main.c holberton.c m.h
+	gcc main.c holberton.c -o holberton
