@@ -1,8 +1,6 @@
-# -*- Task_4 -*-
-
-NAME = holberton
+NAME = school
 CC = gcc
-SRC = main.c holberton.c
+SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 RM = rm -f
 CFLAGS = -Wall -Werror -Wextra -pedantic

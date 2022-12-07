@@ -1,11 +1,2 @@
-# -*- Task_0 -*-
-
-all: holberton
-
-holberton: main.c holberton.c m.h
-	gcc main.c holberton.c -o holberton# -*- MakeFile -*-
-
-all: holberton
-
-holberton: main.c holberton.c m.h
-	gcc main.c holberton.c -o holberton
+all
+		gcc main.c school.c -o school

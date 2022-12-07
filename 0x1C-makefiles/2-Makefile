@@ -1,10 +1,8 @@
-# -*- Task_2 -*-
-
-NAME = holberton
+NAME = school
 all: $(NAME)
 
 CC = gcc
-SRC = main.c holberton.c
+SRC = main.c school.c
 OBJ = $(SRC:.c=.o)
 
 $(NAME): $(OBJ) m.h
